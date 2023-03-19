@@ -185,11 +185,16 @@ img{
 .hero{
     padding-top: 188px;
     padding-bottom: 188px;
-    width: auto;
+    width: 1440px;
     margin: 0 auto;
 
     text-align: center;
-    background-color: var(--link-color);
+
+    background: rgba(46, 47, 66, 0.7);
+    background-image: url(../images/people_office.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: cover;
 }
 
 .hero-two{
@@ -273,10 +278,53 @@ img{
     margin: 0px;
 }
 
+.future-blok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    padding-bottom: 8px;
+
+    background-color: var(--logo-color);
+}
+.future-icon:hover .future-blok
+.future-icon:focus .future-blok{
+
+}
+
 .future-box{
     text-align: center;
     min-width: 232px;
     padding: 32px 16px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.socials-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+
+    background-color: var(--main-color);
+    border-radius: 50%;
+    fill: var(--logo-color);
+   
+}
+
+.socials-link:hover,
+.socials-link:focus{
+    background-color: var(--button-color);
+    
 }
 
 .future-title{
@@ -306,6 +354,7 @@ img{
     color: var(--now-link-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 8px
 }
 
 .future-group{
@@ -350,6 +399,7 @@ img{
 
 .box-color .future-box{
     padding: 32px 16px;
+    min-width: 232px;
 }
 
 .footer{
@@ -357,6 +407,10 @@ img{
     padding-bottom: 100px;
     padding-top: 100px;
     background-color: var(--link-color);
+}
+
+.footer-conteiner{
+    display: flex;
 }
 
 .logo-footer{
@@ -371,8 +425,30 @@ img{
     color: var(--logo-color);
 }
 
+.socials-link-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+
+    background-color: var(--white-color);
+    opacity: 0.1;
+
+    border-radius: 50%;
+    fill: var(--logo-color);
+}
+
+.social-text{
+    font-weight: 500;
+    line-height:1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color)
+}
+
 .text-footer{
-    max-width: 264px;
+    width: 264px;
 
     line-height: 1.5;
     letter-spacing: 0.02em;
