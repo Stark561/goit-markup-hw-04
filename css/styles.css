@@ -368,6 +368,15 @@ img{
     letter-spacing: 0.02em;
 }
 
+.future-text.socials{
+    display: inline-block;
+    
+    color: var(--now-link-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
 .future-group{
     padding-top: 120px;
 }
@@ -439,15 +448,16 @@ img{
     height: 88px;
     border: 1px solid var(--border-radius);
     border-radius: 4px;
+    outline: transparent;
 }
 
 .customers-icon{
     fill: var(--border-radius);
 }
 
-.customers-link:hover{
+.customers-link:hover,
+.customers-link:focus{
     border: 1px solid var(--button-color);
-
 }
 
 .customers-link:focus .customers-icon,
