@@ -139,11 +139,6 @@ img{
     color: var(--main-color);
 }
 
-.group-btn{
-    padding-bottom: 72px;
-
-}
-
 .list-portfolio{
     display: flex;
     justify-content: center;
@@ -276,6 +271,16 @@ img{
     padding-top: 0px;
 }
 
+.future-title{
+    margin-bottom: 8px;
+
+    color: var(--link-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
 .future-list{
     display: flex;
     justify-content: space-between;
@@ -328,18 +333,12 @@ img{
     background-color: var(--button-color);
 }
 
-.future-title{
-    margin-bottom: 8px;
-
-    color: var(--link-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
 .group{
     width: 360px;
+}
+
+.group-item{
+    text-decoration: none;
 }
 
 .foto-group{
@@ -367,7 +366,6 @@ img{
     color: var(--now-link-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 8px
 }
 
 .future-group{
@@ -570,14 +568,27 @@ img{
     letter-spacing: 0.04em;
 }
 
-.now-button:focus,
-.now-button:hover{
-    background: var(--button-color);
-    color: var(--white-color);
+.list-portfolio{
+    list-style: none;
 }
 
 .portfolio-btn{
     margin-left: 24px;
+}
+
+.now-button{
+    border-radius: 4px;
+    outline: transparent;
+}
+
+.now-button:focus,
+.now-button:hover{
+    background: var(--button-color);
+    color: var(--white-color);
+    
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: transparent;
 }
 
 .portfolio-btn:first-child{
